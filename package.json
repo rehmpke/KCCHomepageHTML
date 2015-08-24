@@ -1,0 +1,29 @@
+{
+  "name": "kcc_homepage_visualupgrade",
+  "version": "1.0.0",
+  "description": "This is to get the homepage of the kcc.edu site completed with new styling and layout",
+  "main": "app.js",
+  "author": "Roger Ehmpke",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "~3.2.0",
+    "grunt-contrib-sass": "~0.9.2",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-connect": "~0.10.1",
+    "grunt-wiredep": "~2.0.0",
+    "grunt-contrib-imagemin": "0.9.4",
+    "grunt-newer": "~1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

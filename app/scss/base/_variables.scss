@@ -1,0 +1,52 @@
+//fall back font stack for site
+$basefont-stack:"Helvetica", arial, sans-serif;
+
+//Image path for most of global style sheet
+$imagedir:'/Style%20Library/Images/KCC2010/';
+
+//replace preceeding with the following in dev-authoring environment
+//$imagedir:'http://www.kcc.edu/Style%20Library/Images/KCC2010/';
+
+//Theme colors for site
+$primary-blue: #003768;       // Dark blue
+$primary-red: #c60b46;        // Dark red
+$accent-blue: #005BAC;        // Blue used in all links and link buttons;
+$accent-light-blue: #95a9ca;
+$accent-olive-green: #8d8b00; // Green used in search
+$accent-purple: #8d2187;
+
+// Standard palette, greys
+$black: #000;
+$grey-1: #555;
+$grey-2: #999;
+$grey-3: #BFBFBF;
+$grey-4: #ccc;
+$grey-5: #D8D8D8;
+$grey-6: #eee;
+$grey-7: #F2F2F2;
+$white: #fff;
+
+// Semantic colour names
+$link-colour: $accent-blue;
+$link-active-colour: $accent-blue;
+$link-hover-colour: #227dce;
+$link-visited-colour: $accent-blue;
+$button-colour: $accent-blue;
+$button-hover-colour: #227dce;
+$button-support-color: #ff8533;      // Radio support button
+$button-hover-support-color: #ee6000;
+$text-colour: $black;                // Standard text colour
+$text-secondary-colour: $white;      // Text colour used in most buttons
+$search-colour: $accent-olive-green; // Search icon background
+//$secondary-text-colour: $grey-1;   // Section headers, help text etc.
+//$border-colour: $grey-2;           // Borders, seperators, rules, keylines etc.
+//$panel-colour: $grey-3;            // Related links panel, page footer etc.
+//$canvas-colour: $grey-4;           // Page background
+//$highlight-colour: $grey-4;        // Table stripes etc.
+//$page-colour: $white;              // The page
+$global-nav-bar-colour: $primary-blue;
+$alert-primary-colour: $accent-blue;          // used for primary alerts on the site;
+$alert-success-colour: $accent-olive-green;   // used for success alerts on the site;
+$alert-info-colour: $accent-light-blue;       // used for info alerts on the site;
+$alert-warning-colour: #80561B;               // used for warning alerts on the site;
+$alert-danger-colour: $primary-red;           // used for danger alerts on the site;

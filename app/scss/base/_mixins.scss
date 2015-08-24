@@ -1,0 +1,184 @@
+// TABLE OF CONTENTS
+//-- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+//
+// MIXIN: Background image positioning
+// MIXIN: Border-radius
+// MIXIN: Box
+// MIXIN: Hide-text
+// MIXIN: Media queries
+// MIXIN: Typekit
+//
+//-- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+
+// --------------------------
+//
+// MIXIN: Background image positioning
+//
+// --------------------------
+
+//don't like the name of this mixin it is for background positioning on images with icons.
+//used it so far in welcome-menu.scss
+
+@mixin bi($image, $top, $left, $height, $width) {
+	.#{$image} {
+    position: absolute;
+    display: block;
+	  top: #{$top};
+	  left: #{$left};
+	  height: #{$height};
+	  width: #{$width};
+    background: transparent url("#{$imagedir}#{$image}.png") no-repeat;
+	}
+}
+
+
+// --------------------------
+//
+// MIXIN: Border-radius
+//
+// --------------------------
+
+//mixin is used for rounding corners
+
+@mixin border-radius-side($side, $radius){
+   -moz-border-radius-top#{$side}: #{$radius}px;
+-webkit-border-top-#{$side}-radius: #{$radius}px;
+        border-top-#{$side}-radius: #{$radius}px;
+   -moz-border-radius-bottom#{$side}: #{$radius}px;
+-webkit-border-bottom-#{$side}-radius: #{$radius}px;
+        border-bottom-#{$side}-radius: #{$radius}px;
+}
+
+
+// --------------------------
+//
+// MIXIN: Box
+//
+// --------------------------
+
+//mixin is used for creating side boxes
+
+@mixin box($background-color: #B7C5DB, $color: #000, $width:222px) {
+  width: $width;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: $color;
+  background-color: $background-color;
+}
+
+
+// --------------------------
+//
+// MIXIN: Hide-text
+//
+// --------------------------
+
+//This mixin is not used any where but will use it to hide text where an image is used instead
+
+@mixin hide-text{
+  display: block;
+  text-indent: -9000px;
+  overflow: hidden;
+}
+
+
+// --------------------------
+//
+// MIXIN: Media queries
+//
+// --------------------------
+
+//This mixin is used for media queries.
+
+$small-break: 481px;
+$large-break: 800px;
+
+@mixin mq($size) {
+  @if $size == small {
+    @media screen and (max-width: $small-break) { 
+      @content; 
+    }
+  }
+  @else if $size == medium {
+    @media screen and (min-width: $small-break) and (max-width: $large-break) { 
+      @content; 
+    }
+  }
+  @else if $size == large {
+    @media only screen and (min-width: $large-break) { 
+      @content; 
+    }
+  }
+}
+
+
+// --------------------------
+//
+// MIXIN: Typekit
+//
+// --------------------------
+
+//Sass Mixin for typekit variation-specific font-family names
+//Typekit IE6-8 Support (http://help.typekit.com/customer/portal/articles/6855-Using-multiple-weights-and-styles)
+ 
+$sans-serif: "Helvetica", arial, sans-serif;
+$sans-serif2: "Helvetica", arial, sans-serif;
+ 
+// Must include fallbacks for EACH typekit font — set them each as variables
+//************************************************************************//
+$typekit-fonts:     "aktiv-grotesk-std", "nimbus-sans";  // index [1, 2]
+$typekit-fallbacks:  $sans-serif, $sans-serif2;
+ 
+@mixin font($weight: 400, $style: normal, $font: 1) {
+  $font-weight: $weight;
+  $font-style:  $style;
+ 
+  // Translate Weight
+  @if ($weight == 100) or ($weight == thin) or ($weight == ultralight) {
+    $weight: 1;
+  }
+  @if ($weight == 200) or ($weight == extralight) {
+    $weight: 2;
+  }
+  @if ($weight == 300) or ($weight == light) {
+    $weight: 3;
+  }
+  @if ($weight == 400) or ($weight == normal) or ($weight == book) {
+    $weight: 4;
+  }
+  @if ($weight == 500) or ($weight == medium) {
+    $weight: 5;
+  }
+  @if ($weight == 600) or ($weight == semibold) or ($weight == demi) {
+    $weight: 6;
+  }
+  @if ($weight == 700) or ($weight == bold) {
+    $weight: 7;
+  }
+  @if ($weight == 800) or ($weight == extrabold) {
+    $weight: 8;
+  }
+  @if ($weight == 900) or ($weight == black) or ($weight == heavy) {
+    $weight: 9;
+  }
+ 
+  // Translate Style
+  @if $style == normal {
+    $style: n;
+  }
+  @else if $style == italic {
+    $style: i;
+  }
+ 
+  // Assemble $font-family
+  $primary-font:   nth($typekit-fonts, $font) + "-" + $style + $weight;
+  $secondary-font: nth($typekit-fonts, $font);
+  $fallback-fonts: nth($typekit-fallbacks, $font);
+  $font-family:    quote($primary-font), quote($secondary-font), $fallback-fonts;
+ 
+  font-family: $font-family;
+  font-style:  $font-style;
+  font-weight: $font-weight;
+}

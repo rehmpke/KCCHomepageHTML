@@ -1,0 +1,25 @@
+.home-business .figcaption { margin-left: 0; }
+
+.home-business h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.home-business a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.home-business.grid { margin-bottom: 20px; }
+
+@include mq(small) {
+  .figure img {
+    width: 50%;
+    height: 50%;
+  }
+}

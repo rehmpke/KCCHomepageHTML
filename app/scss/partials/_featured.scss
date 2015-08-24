@@ -1,0 +1,16 @@
+.featured {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured img { border: 1px solid #D8D8D8; }
+
+.featured .rslides img{
+  width: 720px;
+  height: 481px;
+  margin-right: 0;
+}
