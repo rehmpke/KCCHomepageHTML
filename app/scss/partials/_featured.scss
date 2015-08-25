@@ -14,3 +14,17 @@
   height: 481px;
   margin-right: 0;
 }
+
+@include mq(small){
+  .featured .rslides img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include mq(medium){
+  .featured .rslides img{
+    width: 100%;
+    height: auto;
+  }
+}

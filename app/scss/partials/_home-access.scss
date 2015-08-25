@@ -6,7 +6,9 @@
   margin-left: 0;
 }
 
-.home-access.studentaccess h2 { font-size: 19px; }
+.home-access.studentaccess h2 {
+  font-size: 19px;
+}
 
 @include mq('small'){
   .home-access.studentaccess {
@@ -15,10 +17,12 @@
     width: 103%;
     margin-left: -12px;
   }
-  .home-access.studentaccess ul{
-    padding-left:80px;
+
+  .home-access.studentaccess ul {
+    padding-left: 80px;
   }
-  .home-access.studentaccess li div{
-    left:-66px;
+
+  .home-access.studentaccess li div {
+    left: -66px;
   }
 }
