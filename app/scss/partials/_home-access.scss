@@ -1,9 +1,9 @@
 .home-access.studentaccess {
-  width: 83%;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 0;
   margin-left: 0;
+  float:left;
 }
 
 .home-access.studentaccess h2 {
@@ -24,5 +24,27 @@
 
   .home-access.studentaccess li div {
     left: -66px;
+  }
+}
+
+@include mq('medium'){
+  .home-access.studentaccess medium{
+    width: 100%;
+  }
+  
+  .home-access.studentaccess {
+    width: 100%;
+  }
+  
+  .home-access li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+@include mq('large'){
+  .home-access.studentaccess large{
+    
+    width: 100px;
   }
 }

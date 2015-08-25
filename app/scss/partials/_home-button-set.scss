@@ -1,0 +1,22 @@
+.home-button-set {
+  float: left;
+}
+
+@include mq(small){
+  .home-button-set .small { width: 100%; }
+}
+
+@include mq(medium){
+  .home-button-set .medium { width:100%; }
+
+}
+
+@include mq(large){
+  .home-button-set .large { 
+    width:200px;
+    padding-left:35px;
+    padding-right:0; 
+  }
+  
+  .home-button-set a { margin-left: auto; margin-right: auto; }
+}

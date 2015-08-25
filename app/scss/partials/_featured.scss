@@ -3,7 +3,6 @@
   margin-left: auto;
   position: relative;
   float: left;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -16,6 +15,10 @@
 }
 
 @include mq(small){
+  .featured .small {
+    width: 100%;
+  }
+  
   .featured .rslides img{
     width: 100%;
     height: auto;
@@ -23,6 +26,15 @@
 }
 
 @include mq(medium){
+  .featured .medium { width:100%; }
+  .featured .rslides img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include mq(large){
+  .featured .large { width:724px; float: left; }
   .featured .rslides img{
     width: 100%;
     height: auto;

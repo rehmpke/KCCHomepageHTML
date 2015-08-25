@@ -1,0 +1,17 @@
+@include mq('small'){
+.section.hero{
+   margin-left: -21px; 
+}
+}
+
+@include mq('medium'){
+ .section.hero{
+   margin-left: -21px;
+}
+}
+
+@include mq('large'){
+ .section.hero{
+    margin-left: -8px;
+}
+}

@@ -107,12 +107,26 @@ body #MSO_ContentTable {
   border: 5px solid #227dce;
 }
 
+@media screen and (max-width: 481px) {
+  .section.hero {
+    margin-left: -21px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .section.hero {
+    margin-left: -21px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .section.hero {
+    margin-left: -8px;
+  }
+}
 .featured {
   margin-right: auto;
   margin-left: auto;
   position: relative;
   float: left;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -127,15 +141,60 @@ body #MSO_ContentTable {
 }
 
 @media screen and (max-width: 481px) {
+  .featured .small {
+    width: 100%;
+  }
+
   .featured .rslides img {
     width: 100%;
     height: auto;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
+  .featured .medium {
+    width: 100%;
+  }
+
   .featured .rslides img {
     width: 100%;
     height: auto;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .featured .large {
+    width: 724px;
+    float: left;
+  }
+
+  .featured .rslides img {
+    width: 100%;
+    height: auto;
+  }
+}
+.home-button-set {
+  float: left;
+}
+
+@media screen and (max-width: 481px) {
+  .home-button-set .small {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .home-button-set .medium {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .home-button-set .large {
+    width: 200px;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+
+  .home-button-set a {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .home-business .figcaption {
@@ -147,24 +206,50 @@ body #MSO_ContentTable {
   font-weight: normal;
 }
 
+.figure {
+  float: left;
+}
+
 @media screen and (max-width: 481px) {
+  .figure.small {
+    width: 29%;
+  }
+
+  .figure {
+    float: none;
+  }
+
   .figure img {
     width: 110px;
     height: 110px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
+  .figure.medium {
+    width: 29%;
+  }
+
+  .figure img {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .figure.large {
+    width: 24.333333%;
+  }
+
   .figure img {
     width: 110px;
     height: 110px;
   }
 }
 .home-access.studentaccess {
-  width: 83%;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 0;
   margin-left: 0;
+  float: left;
 }
 
 .home-access.studentaccess h2 {
@@ -185,6 +270,25 @@ body #MSO_ContentTable {
 
   .home-access.studentaccess li div {
     left: -66px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .home-access.studentaccess medium {
+    width: 100%;
+  }
+
+  .home-access.studentaccess {
+    width: 100%;
+  }
+
+  .home-access li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .home-access.studentaccess large {
+    width: 100px;
   }
 }
 .home-cta-set {
