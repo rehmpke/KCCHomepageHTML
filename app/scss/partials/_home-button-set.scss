@@ -3,16 +3,18 @@
 }
 
 @include mq(small){
-  .home-button-set .small { width: 100%; }
+  .home-button-set { float: none;}
+  .home-button-set.small { width: 100%; }
 }
 
 @include mq(medium){
-  .home-button-set .medium { width:100%; }
+  .home-button-set { float: none; }
+  .home-button-set.medium { width:100%; }
 
 }
 
 @include mq(large){
-  .home-button-set .large { 
+  .home-button-set.large { 
     width:200px;
     padding-left:35px;
     padding-right:0; 

@@ -28,12 +28,12 @@
 }
 
 @include mq('medium'){
-  .home-access.studentaccess medium{
-    width: 100%;
+  .home-access.studentaccess medium {
+    width: 97%;
   }
   
   .home-access.studentaccess {
-    width: 100%;
+    width: 97%;
   }
   
   .home-access li {
@@ -43,8 +43,11 @@
 }
 
 @include mq('large'){
-  .home-access.studentaccess large{
-    
+  .home-access.studentaccess {
+    margin-left: 12px;
+  }
+  
+  .home-access.studentaccess large {
     width: 100px;
   }
 }

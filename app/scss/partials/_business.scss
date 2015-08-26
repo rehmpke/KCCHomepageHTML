@@ -5,12 +5,25 @@
   font-weight: normal;
 }
 
-.figure{float:left;}
+.figure{
+  float:left; 
+  text-align:center;
+  width:24.333333%;
+}
+  .figure img {
+    width: 110px;
+    height: 110px;
+  }
 @include mq(small) {
-  .figure.small {width:29%;}
+  .figure {
+    width:100%;
+    text-align: center;
+    }
+ 
   .figure {
     float:none;
   }
+ 
   .figure img {
     width: 110px;
     height: 110px;
@@ -18,7 +31,7 @@
 }
 
 @include mq(medium) {
-  .figure.medium {width:29%;}
+  .figure {width:31%;}
   .figure img {
     width: 110px;
     height: 110px;
@@ -26,7 +39,7 @@
 }
 
 @include mq(large) {
-  .figure.large {width:24.333333%;}
+  .figure {width:24.333333%;}
   .figure img {
     width: 110px;
     height: 110px;

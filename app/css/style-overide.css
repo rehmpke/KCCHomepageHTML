@@ -176,17 +176,25 @@ body #MSO_ContentTable {
 }
 
 @media screen and (max-width: 481px) {
-  .home-button-set .small {
+  .home-button-set {
+    float: none;
+  }
+
+  .home-button-set.small {
     width: 100%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
-  .home-button-set .medium {
+  .home-button-set {
+    float: none;
+  }
+
+  .home-button-set.medium {
     width: 100%;
   }
 }
 @media only screen and (min-width: 800px) {
-  .home-button-set .large {
+  .home-button-set.large {
     width: 200px;
     padding-left: 35px;
     padding-right: 0;
@@ -208,11 +216,19 @@ body #MSO_ContentTable {
 
 .figure {
   float: left;
+  text-align: center;
+  width: 24.333333%;
+}
+
+.figure img {
+  width: 110px;
+  height: 110px;
 }
 
 @media screen and (max-width: 481px) {
-  .figure.small {
-    width: 29%;
+  .figure {
+    width: 100%;
+    text-align: center;
   }
 
   .figure {
@@ -225,8 +241,8 @@ body #MSO_ContentTable {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
-  .figure.medium {
-    width: 29%;
+  .figure {
+    width: 31%;
   }
 
   .figure img {
@@ -235,7 +251,7 @@ body #MSO_ContentTable {
   }
 }
 @media only screen and (min-width: 800px) {
-  .figure.large {
+  .figure {
     width: 24.333333%;
   }
 
@@ -274,11 +290,11 @@ body #MSO_ContentTable {
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
   .home-access.studentaccess medium {
-    width: 100%;
+    width: 97%;
   }
 
   .home-access.studentaccess {
-    width: 100%;
+    width: 97%;
   }
 
   .home-access li {
@@ -287,6 +303,10 @@ body #MSO_ContentTable {
   }
 }
 @media only screen and (min-width: 800px) {
+  .home-access.studentaccess {
+    margin-left: 12px;
+  }
+
   .home-access.studentaccess large {
     width: 100px;
   }
