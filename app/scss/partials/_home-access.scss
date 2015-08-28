@@ -2,12 +2,20 @@
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 0;
-  margin-left: 0;
+  margin-left: 12px;
+  width: 222px;
   float:left;
 }
 
 .home-access.studentaccess h2 {
   font-size: 19px;
+}
+
+.home-access.studentaccess .kcconnect span {
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 1px;
+  color: #aaa;
 }
 
 @include mq('small'){
@@ -28,9 +36,6 @@
 }
 
 @include mq('medium'){
-  .home-access.studentaccess medium {
-    width: 97%;
-  }
   
   .home-access.studentaccess {
     width: 97%;
@@ -39,15 +44,5 @@
   .home-access li {
     display: inline-block;
     margin-left: 20px;
-  }
-}
-
-@include mq('large'){
-  .home-access.studentaccess {
-    margin-left: 12px;
-  }
-  
-  .home-access.studentaccess large {
-    width: 100px;
   }
 }
