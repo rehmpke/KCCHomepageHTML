@@ -1,0 +1,36 @@
+.kcc-warning {
+	background-color: #c60b46;
+	color: white;
+	width:94%;
+	font-weight:bold;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+@include mq(small)
+{
+.kcc-warning {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 94%;
+  margin-left: -20px;
+  }
+}
+
+@include mq(medium) {
+.kcc-warning {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 94%;
+  margin-left: -20px;
+  }
+}
+
+.kcc-warning p {
+    margin-bottom: 0;
+}
+
+.kcc-warning p + p, p + ul, p + ol {
+	margin-top: 0.85em;
+}
